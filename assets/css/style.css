@@ -72,6 +72,7 @@ form div button {
     background: #5d0dff;
     border: 0;
     color: #fff;
+    cursor: pointer;
 }
 img.imagem {
     margin: 50px auto;
