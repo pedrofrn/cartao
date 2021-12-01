@@ -1,0 +1,80 @@
+html {
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #2f1541;
+}
+section {
+    max-width: 500px;
+    margin: auto;
+    color: #846180;
+}
+section p {
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    color: #fbea10;
+    line-height: 1em;
+    text-align: center;
+}
+form {
+    width: 320px;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+form div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form div label, form label#avatar {
+    display: block;
+    color: #fbea10;
+    text-transform: uppercase;
+    font-size: smaller;
+    background: #2f1541;
+    width: fit-content;
+    padding: 0 5px;
+    margin-left: 10px;
+    margin-bottom: -7px;
+    z-index: 999;
+    position: relative;
+}
+form div input {
+    margin: auto;
+    border-color: #5d0dff;
+    border-width: 1px 1px 1px 1px;
+    min-height: 30px;
+    padding: 5px 15px;
+    background-color: #2f1541;
+    border-style: solid;
+    color: #e3b7c5;
+    width: -webkit-fill-available;
+}
+form input#avatar {
+    padding: 10px 15px;
+    height: 40px;
+}
+::-webkit-input-placeholder {
+    color: #846180;
+ }
+form div button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    background: #5d0dff;
+    border: 0;
+    color: #fff;
+}
+img.imagem {
+    margin: 50px auto;
+    width: 80px;
+    display: block;
+}

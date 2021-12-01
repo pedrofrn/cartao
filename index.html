@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cartão de Visita Interativo</title>
+</head>
+
+<body>
+    <section>
+        <h1>Crie seu Cartão <br>de Visita Interativo</h1>
+        <p>Envie seu cartão de visita pelo celular, com e-mail, número de contato, site, WhatsApp, Facebook, Instagram e
+            endereço, tudo isso com links interativos!</p>
+    </section>
+    <section>
+        <p><span style="color:#fff;">Preencha o formulário e baixe gratuitamente</span> seu cartão de visita virtual para enviar através das redes
+            sociais.</p>
+        <form method="post" id="formCartao" name="formCartao" onsubmit="addPDF()">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+            </div>
+            <div>
+                <label for="cargo">Profissão</label>
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo, profissão ou serviço">
+            </div>
+            <div>
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" id="descricao" placeholder="Descreva suas atividades">
+            </div>
+            <div>
+                <label for="telefone">Número de contato</label>
+                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" maxlength="15">
+            </div>
+            <div>
+                <label for="site">Site</label>
+                <input type="text" name="site" id="site" placeholder="www.seusite.com.br">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="nome@email.com.br">
+            </div>
+            <div>
+                <label for="facebook">Facebook</label>
+                <input type="text" name="facebook" id="facebook" placeholder="facebook.com/perfil">
+            </div>
+            <div>
+                <label for="instagram">Instagram</label>
+                <input type="text" name="instagram" id="instagram" placeholder="instagram.com/perfil">
+            </div>
+            <div>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Nº do CEP" onblur="pesquisacep(this.value);">
+            </div>
+            <div>
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" placeholder="Rua">
+            </div>
+            <div>
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            </div>
+            <div>
+                <label for="uf">Estado</label>
+                <input type="text" name="uf" id="uf" placeholder="Estado">
+            </div>
+
+            <label id="avatar" for="avatar">Imagem</label>
+            <input type="file" name="avatar" id="avatar" data-maxsize="3"
+                data-maxsize-message="Tamanho excedido. Por favor, escolha outra imagem."
+                onchange="encodeImageFileAsURL(this)">
+
+            <div>
+                <button type="submit" id="criar">Criar cartão</button>
+            </div>
+        </form>
+    </section>
+    <img class="imagem" src="assets/images/simbolo-mago-eletrico.png" alt="">
+    <script src="assets/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">$("#telefone").mask("(00) 00000-0009");</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
