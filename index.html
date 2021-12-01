@@ -21,19 +21,19 @@
         <form method="post" id="formCartao" name="formCartao" onsubmit="addPDF()">
             <div>
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome aqui" required>
             </div>
             <div>
                 <label for="cargo">Profissão</label>
-                <input type="text" name="cargo" id="cargo" placeholder="Cargo, profissão ou serviço">
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo, profissão ou serviço" required>
             </div>
             <div>
                 <label for="descricao">Descrição</label>
-                <input type="text" name="descricao" id="descricao" placeholder="Descreva suas atividades">
+                <input type="text" name="descricao" id="descricao" placeholder="Descreva suas atividades" required>
             </div>
             <div>
                 <label for="telefone">Número de contato</label>
-                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" maxlength="15">
+                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
             </div>
             <div>
                 <label for="site">Site</label>
@@ -41,7 +41,7 @@
             </div>
             <div>
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="nome@email.com.br">
+                <input type="email" name="email" id="email" placeholder="nome@email.com.br" required>
             </div>
             <div>
                 <label for="facebook">Facebook</label>
@@ -53,7 +53,7 @@
             </div>
             <div>
                 <label for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" placeholder="Nº do CEP" onblur="pesquisacep(this.value);">
+                <input type="text" name="cep" id="cep" placeholder="Nº do CEP" onblur="pesquisacep(this.value);" required>
             </div>
             <div>
                 <label for="rua">Rua</label>
@@ -75,7 +75,7 @@
             <label id="avatar" for="avatar">Imagem</label>
             <input type="file" name="avatar" id="avatar" data-maxsize="3"
                 data-maxsize-message="Tamanho excedido. Por favor, escolha outra imagem."
-                onchange="encodeImageFileAsURL(this)">
+                onchange="encodeImageFileAsURL(this)" required>
 
             <div>
                 <button type="submit" id="criar">Criar cartão</button>
