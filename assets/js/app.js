@@ -308,11 +308,9 @@ function addPDF() {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             const blob = doc.output();
             window.open(doc.output("bloburl"), "_blank");
-            document.getElementById('mensagem-sucesso').innerText = 'Parabéns! Cartão Virtual gerado com sucesso.'
         }
         else {
-
-            doc.save(nomePdf + ' - ' + cargoPdf + '.pdf')
-            document.getElementById('mensagem-sucesso').innerText = 'Parabéns! Cartão Virtual gerado com sucesso.'
+            doc.save(nomePdf + ' - ' + cargoPdf + '.pdf');
+            window.open('https://pedrofrn.github.io/cartao/');
         }
     }
