@@ -18,7 +18,8 @@
     <section>
         <p><span style="color:#fff;">Preencha o formulário e baixe gratuitamente</span> seu cartão de visita virtual para enviar através das redes
             sociais.</p>
-        <form method="post" id="formCartao" name="formCartao" onsubmit="addPDF()">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form method="post" id="formCartao" name="formCartao" onsubmit="addPDF()" target="dummyframe">
             <div>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
