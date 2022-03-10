@@ -1,6 +1,4 @@
-# Cartão de Visita Interativo
-Aplicação desenvolvida junto ao jsPDF para gerar arquivo a partir de formulário.
+# Interactive Business Card
+Form developed in HTML, CSS and JavaScript that uses the jsPDF API to generate a PDF file.
 
-Envie seu cartão de visita pelo celular, com e-mail, número de contato, site, WhatsApp, Facebook, Instagram e endereço, tudo isso com links interativos!
-
-Acesse [aqui](https://pedrofrn.github.io/cartao/) e preencha o formulário.
+[Access here](https://pedrofrn.github.io/cartao/).
